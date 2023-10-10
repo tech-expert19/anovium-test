@@ -1,0 +1,10 @@
+SQLAlchemy
+fastapi
+pydantic
+psycopg2
+pycparser
+python-dotenv
+pydantic-settings
+pydantic[dotenv]
+alembic
+uvicorn

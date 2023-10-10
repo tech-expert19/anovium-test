@@ -1,0 +1,190 @@
+$primary: #78CEC9;
+$secondary: #666;
+
+@import 'bootstrap/scss/_functions.scss';
+@import 'bootstrap/scss/_variables.scss';
+
+// can customize theme here
+$custom-theme-colors: (
+    'text-color': #666,
+    'btn-hover-color': #005a96,
+    'btn-hover-border': #005289,
+    'bg-primary': #000,
+    'bg-light': #efefef
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import 'bootstrap/scss/bootstrap.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.main-header {
+    border-bottom: 5px solid $primary;
+    .nav-link.active {
+        color: #78CEC9 !important;
+    }
+}
+
+.header-logo {
+    max-width: 150px;
+    height: 20;
+}
+
+.ez-navbar-nav {
+    .nav-link {
+        margin-left: 10px;
+    }
+}
+
+//footer1 4 columns
+.ez-footer.ez-footer-ltr {
+    div + div {
+        border-left: 2px solid #E2EDEE;
+    }
+}
+.ez-footer.ez-footer-rtl {
+    div + div {
+        border-right: 2px solid #E2EDEE;
+    }
+}
+
+//footer2-Copyrights
+
+.ez-footer-link {
+    ul {
+        li + li:before {
+            display: inline-block;
+            content: '|';
+            margin-left: 12px;
+            margin-right: 12px;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ez-navbar-container {
+        padding: 0 0px;
+    }
+
+    .ez-navbar-nav {
+        font-size: 1.15rem;
+
+        .nav-link {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) and (min-width: 576px) {
+    .ez-footer div:nth-child(2n + 1) {
+        border-left: none;
+    }
+}
+// talk to doctor section home-page
+@media screen and (max-width: 576px) {
+    .ez-lang-btn-mob {
+        .lang-btn-mob__li {
+            padding-right: 0.5rem !important;
+
+            .lang-btn-mob__a {
+                padding-right: 1rem !important;
+                padding-left: 1rem !important;
+            }
+
+            &:last-child {
+                padding-right: 0 !important;
+            }
+        }
+    }
+    .header-logo {
+        max-width: 150px;
+    }
+}
+
+@media (min-width: 576px) {
+    h1,
+    .heading-h1 {
+        font-size: 2.37rem;
+        line-height: 45px;
+    }
+    h2,
+    .heading-h2 {
+        font-size: 2.12rem;
+        line-height: 38px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    h1,
+    .heading-h1 {
+        font-size: 2.81rem;
+        line-height: 55px;
+    }
+    h2,
+    .heading-h2 {
+        font-size: 2.25rem;
+        line-height: 42px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    h1,
+    .heading-h1 {
+        font-size: 3.25rem;
+        line-height: 60px;
+    }
+    h2,
+    .heading-h2 {
+        font-size: 2.5rem;
+        line-height: 48px;
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    h1,
+    .heading-h1 {
+        font-size: 3.9rem;
+        line-height: 72px;
+    }
+    h2,
+    .heading-h2 {
+        font-size: 2.87rem;
+        line-height: 55px;
+    }
+}
+
+.basic-modal {
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-footer {
+        border-top: none;
+    }
+}
